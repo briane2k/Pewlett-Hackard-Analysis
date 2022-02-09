@@ -1,16 +1,16 @@
 # Pewlett-Hackard-Analysis
-# This analysis to determine the number of retiring employees per title, and list employees who are eligible for a mentorship program.
+# This analysis is to determine the number of retiring employees per title, and list employees who are eligible for a mentorship program.
 
 
 
 ## To Summarize our results from our queries:
 - From the retirement data it can be calculated there are 72,458 Retiring Employees. See IMG below
 - A large percentage of these have a "Senior" Title, approximately 26K Senior Engineer (36% of the above given count), and approximately 25K Senior Staff (34% of the above given count), this is a large count of highly trained personnel.
-!(RetirmentChartAnalysis.png)
+![RetirmentChartAnalysis](RetirmentChartAnalysis.png)
 
 - From the mentorship data it can be calculated there are 1,549 Eligible Employees. See IMG below
 - In this group there are still a lot more Senior Staff than Staff, however in this group there are more Engineers than Senior Engineers.  The mentorship program would help the Senior Staff pass on their knowledge to the Staff.
-!(MentorshipEligibilityAnalysis.png)
+![MentorshipEligibilityAnalysis](MentorshipEligibilityAnalysis.png)
 
 
 
@@ -26,7 +26,7 @@ ORDER BY from_date_year ASC
 
 We can see in the below img in 7 years from present the number of retirees will double from approx. 1K to 2K per year,
 then increase every year until peaking 14 from now with almost 9K employees retiring, in the 13 years previous it would already total 45K employees.
-!(retirement by year.png)
+![RetirementByYear.png](RetirementByYear.png)
 
 
 
@@ -79,9 +79,9 @@ INNER JOIN dept_ment_counts d_m_c
 ORDER BY dept_name
 ```
 
-!(EmpRetPercentages.png)
+![EmpRetPercentages](EmpRetPercentages.png)
 
-## We can see that every department has about 60% personal retiring, with about 00.60% to 00.85% available to mentor.
+## We can see that every department has about 60% personnel retiring, with about 00.60% to 00.85% available to mentor.
 It seems like there may not be quite enough employees available to be mentors; 100:1 is low.
-Perhapse employees born before 1965 but after 1955 should be included in eligibility for Mentorship?
+Perhaps employees born before 1965 but after 1955 should be included in eligibility for Mentorship?
 
